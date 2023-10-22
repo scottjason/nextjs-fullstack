@@ -1,0 +1,40 @@
+{
+  "name": "task-tango",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky install",
+    "lint": "eslint --fix . && prettier --write .",
+    "migrate": "dotenv -e .env.local npx prisma migrate dev",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.4.2",
+    "@types/bcryptjs": "^2.4.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "autoprefixer": "^10",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "postcss": "^8",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "prisma": "^5.4.2",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
